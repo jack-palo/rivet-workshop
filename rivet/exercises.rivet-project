@@ -1,0 +1,487 @@
+version: 4
+data:
+  attachedData:
+    trivet:
+      testSuites: []
+      version: 1
+  graphs:
+    CeKKl8oyWBa1BbwjXPyZM:
+      metadata:
+        description: ""
+        id: CeKKl8oyWBa1BbwjXPyZM
+        name: 3. Game of 24/1. No JS function call
+      nodes:
+        '[GrXmaqb4ELFILOw6PEr_V]:prompt "Prompt"':
+          data:
+            enableFunctionCall: false
+            promptText: 5 5 1 6
+            type: user
+            useTypeInput: false
+          outgoingConnections:
+            - output->"Assemble Prompt" _CQ3rXtekVDRp6RNF_rHl/message2
+          visualData: 561.4749672554698/751.5095105365216/280/746//
+        '[LjWdMQ9rbLIm5LzB1mYQH]:chat "Chat"':
+          data:
+            additionalParameters: []
+            cache: false
+            code: ""
+            enableFunctionUse: false
+            endpoint: https://api.groq.com/openai/v1/chat/completions
+            headers:
+              - key: Authorization
+                value: Bearer <your-api-key>
+              - key: Content-Type
+                value: application/json
+            maxTokens: 3000
+            model: local-model
+            overrideModel: llama3-8b-8192
+            parallelFunctionCalling: true
+            stop: ""
+            temperature: 1
+            text: ""
+            top_p: 1
+            useAdditionalParametersInput: false
+            useAsGraphPartialOutput: true
+            useFrequencyPenaltyInput: false
+            useHeadersInput: false
+            useMaxTokensInput: false
+            useModelInput: false
+            usePresencePenaltyInput: false
+            useStop: false
+            useStopInput: false
+            useTemperatureInput: false
+            useTopP: false
+            useTopPInput: false
+            useUseTopPInput: false
+            useUserInput: false
+          visualData: 1507.9859346825763/496.8302168552407/230/768//
+        '[_CQ3rXtekVDRp6RNF_rHl]:assemblePrompt "Assemble Prompt"':
+          outgoingConnections:
+            - prompt->"Chat" LjWdMQ9rbLIm5LzB1mYQH/prompt
+          visualData: 996.6090742167116/680.3719694855304/280/766//
+        '[_X1SEOypfpgPdnDSxYxtE]:prompt "Prompt"':
+          data:
+            enableFunctionCall: false
+            promptText: >-
+              Your task is to make the number 24 using all of four numbers. You
+              can add, subtract, multiply or divide. You have to use all four
+              numbers. Each number may be used only once. For example, if I give
+              you "5, 5, 3, 4" a valid answer is "5 * 5 - (4 - 3)."
+
+
+              Output the answer in the format below:
+
+
+              ANSWER: 5 * 5 - (4 - 3)
+            type: system
+            useTypeInput: false
+          outgoingConnections:
+            - output->"Assemble Prompt" _CQ3rXtekVDRp6RNF_rHl/message1
+          visualData: 993.7347916275568/349.75093466168727/280/757//
+    leYzer01qH45JoW32zqVW:
+      metadata:
+        description: ""
+        id: leYzer01qH45JoW32zqVW
+        name: 1. N-shot/1. No-shot
+      nodes:
+        '[GE72LWd7Xj4DwBdLL__BT]:chat "Chat"':
+          data:
+            additionalParameters: []
+            cache: false
+            code: ""
+            enableFunctionUse: false
+            endpoint: https://api.groq.com/openai/v1/chat/completions
+            headers:
+              - key: Authorization
+                value: Bearer <your-api-key>
+              - key: Content-Type
+                value: application/json
+            maxTokens: 3000
+            model: local-model
+            overrideModel: llama3-8b-8192
+            parallelFunctionCalling: true
+            stop: ""
+            temperature: 1
+            text: ""
+            top_p: 1
+            useAdditionalParametersInput: false
+            useAsGraphPartialOutput: true
+            useFrequencyPenaltyInput: false
+            useHeadersInput: false
+            useMaxTokensInput: false
+            useModelInput: false
+            usePresencePenaltyInput: false
+            useStop: false
+            useStopInput: false
+            useTemperatureInput: false
+            useTopP: false
+            useTopPInput: false
+            useUseTopPInput: false
+            useUserInput: false
+          visualData: 1401.718156885314/553.7445339255942/230/708//
+        '[N2w0J0kJUlls0E9heUmD_]:prompt "Prompt"':
+          data:
+            enableFunctionCall: false
+            promptText: Find Job Title, Company, Location and output in JSON format. Your
+              output should contain only JSON format.
+            type: user
+            useTypeInput: false
+          outgoingConnections:
+            - output->"Assemble Prompt" nmVo3ZFZwhHtabBIxcC4V/message2
+          visualData: 592.361465219413/746.6597048975234/280/707//
+        '[TFHAyI-UuBEXAtSARsNV2]:prompt "Prompt"':
+          data:
+            enableFunctionCall: false
+            promptText: >-
+              Job Title: Operations Manager
+
+
+              Job Description:
+
+
+              We are looking for an experienced Operations Manager to oversee our company's daily operations and ensure efficiency and effectiveness in all aspects of our business. The ideal candidate will have a strong background in operations management, exceptional leadership skills, and a strategic mindset.
+
+
+              Company name is Namek Co., Ltd. Located in Namekian Village.
+
+
+              Responsibilities:
+
+
+              Oversee day-to-day operations and ensure they align with the company's goals and objectives.
+
+              Develop and implement operational policies, procedures, and systems to improve efficiency and productivity.
+
+              Manage budgets, inventory, and other resources to optimize profitability.
+
+              Lead and motivate a team of employees to achieve operational targets.
+
+              Collaborate with other departments to streamline processes and improve cross-functional communication.
+
+              Analyze operational performance data and generate reports to identify areas for improvement.
+
+              Qualifications:
+
+
+              Bachelor's degree in Business Administration, Operations Management, or a related field.
+
+              Proven experience in operations management.
+
+              Strong leadership and team management skills.
+
+              Excellent analytical and problem-solving skills.
+
+              Proficiency in operations management software and tools.
+
+              Strong communication and interpersonal skills.
+
+              This is a full-time position with a competitive salary and benefits package. If you are a strategic thinker with a passion for driving operational excellence, we encourage you to apply!
+            type: user
+            useTypeInput: false
+          outgoingConnections:
+            - output->"Assemble Prompt" nmVo3ZFZwhHtabBIxcC4V/message1
+          visualData: 598.5103802849904/286.1031945463055/280/706//
+        '[nmVo3ZFZwhHtabBIxcC4V]:assemblePrompt "Assemble Prompt"':
+          outgoingConnections:
+            - prompt->"Chat" GE72LWd7Xj4DwBdLL__BT/prompt
+          visualData: 982.8427699790903/681.6998380103466/280/702//
+    svI1rXkJy_XF7qQlhS8cA:
+      metadata:
+        description: ""
+        id: svI1rXkJy_XF7qQlhS8cA
+        name: 1. N-shot/2. One-shot
+      nodes:
+        '[7JvRXbGK_aB-l0G6Q7cP-]:assemblePrompt "Assemble Prompt"':
+          outgoingConnections:
+            - prompt->"Chat" e0MNku-Xtds6c5iYTEYPH/prompt
+          visualData: 981.5868601518647/664.1171004291868/280/726//
+        '[ZjL5I1SCG3CErNd2qU7-C]:comment "Comment"':
+          data:
+            backgroundColor: rgba(0,0,0,0.05)
+            color: rgba(255,255,255,1)
+            height: 825.8345248376804
+            text: "#### Example prompt"
+          visualData: 445.3266699516277/65.59561473898104/371.6968115549687/725//
+        '[aI2ut1_tCnZyFTF9mOETu]:prompt "Prompt"':
+          data:
+            enableFunctionCall: false
+            promptText: Answer in a consistent style.
+            type: system
+            useTypeInput: false
+          outgoingConnections:
+            - output->"Assemble Prompt" 7JvRXbGK_aB-l0G6Q7cP-/message1
+          visualData: 984.5536931942515/477.38657472158343/280/727//
+        '[e0MNku-Xtds6c5iYTEYPH]:chat "Chat"':
+          data:
+            additionalParameters: []
+            cache: false
+            code: ""
+            enableFunctionUse: false
+            endpoint: https://api.groq.com/openai/v1/chat/completions
+            headers:
+              - key: Authorization
+                value: Bearer <your-api-key>
+              - key: Content-Type
+                value: application/json
+            maxTokens: 3000
+            model: local-model
+            overrideModel: llama3-8b-8192
+            parallelFunctionCalling: true
+            stop: ""
+            temperature: 1
+            text: ""
+            top_p: 1
+            useAdditionalParametersInput: false
+            useAsGraphPartialOutput: true
+            useFrequencyPenaltyInput: false
+            useHeadersInput: false
+            useMaxTokensInput: false
+            useModelInput: false
+            usePresencePenaltyInput: false
+            useStop: false
+            useStopInput: false
+            useTemperatureInput: false
+            useTopP: false
+            useTopPInput: false
+            useUseTopPInput: false
+            useUserInput: false
+          visualData: 1381.1902105865495/517.0514011885106/230/692//
+        '[tO8Bm0tQg0fxlTm2llurb]:prompt "Prompt"':
+          data:
+            enableFunctionCall: false
+            promptText: >-
+              Job Title: Operations Manager
+
+
+              Job Description:
+
+
+              We are looking for an experienced Operations Manager to oversee our company's daily operations and ensure efficiency and effectiveness in all aspects of our business. The ideal candidate will have a strong background in operations management, exceptional leadership skills, and a strategic mindset.
+
+
+              Company name is Namek Co., Ltd. Located in Namekian Village.
+
+
+              Responsibilities:
+
+
+              Oversee day-to-day operations and ensure they align with the company's goals and objectives.
+
+              Develop and implement operational policies, procedures, and systems to improve efficiency and productivity.
+
+              Manage budgets, inventory, and other resources to optimize profitability.
+
+              Lead and motivate a team of employees to achieve operational targets.
+
+              Collaborate with other departments to streamline processes and improve cross-functional communication.
+
+              Analyze operational performance data and generate reports to identify areas for improvement.
+
+              Qualifications:
+
+
+              Bachelor's degree in Business Administration, Operations Management, or a related field.
+
+              Proven experience in operations management.
+
+              Strong leadership and team management skills.
+
+              Excellent analytical and problem-solving skills.
+
+              Proficiency in operations management software and tools.
+
+              Strong communication and interpersonal skills.
+
+              This is a full-time position with a competitive salary and benefits package. If you are a strategic thinker with a passion for driving operational excellence, we encourage you to apply!
+            type: user
+            useTypeInput: false
+          outgoingConnections:
+            - output->"Assemble Prompt" 7JvRXbGK_aB-l0G6Q7cP-/message4
+          visualData: 520.6679535600338/959.2559098272257/280/715//
+    xKNpUOyu7nVyJdhyttJX8:
+      metadata:
+        description: ""
+        id: xKNpUOyu7nVyJdhyttJX8
+        name: 2. Translate and Summarize/1. No-shot
+      nodes:
+        '[NqADxPg0V9VDVqeLELQg9]:prompt "Prompt"':
+          data:
+            enableFunctionCall: false
+            promptText: You are a translator. Please translate and summarize the provided
+              article in English.
+            type: system
+            useTypeInput: false
+          outgoingConnections:
+            - output->"Chat" mkBkorFAah6PKeoYQDgNr/systemPrompt
+          visualData: 252.12012688456443/387.7748785077599/280/701//
+        '[mkBkorFAah6PKeoYQDgNr]:chat "Chat"':
+          data:
+            additionalParameters: []
+            cache: false
+            code: ""
+            enableFunctionUse: false
+            endpoint: https://api.groq.com/openai/v1/chat/completions
+            headers:
+              - key: Authorization
+                value: Bearer <your-api-key>
+              - key: Content-Type
+                value: application/json
+            maxTokens: 3000
+            model: local-model
+            overrideModel: llama3-8b-8192
+            parallelFunctionCalling: true
+            stop: ""
+            temperature: 1
+            text: ""
+            top_p: 1
+            useAdditionalParametersInput: false
+            useAsGraphPartialOutput: true
+            useFrequencyPenaltyInput: false
+            useHeadersInput: false
+            useMaxTokensInput: false
+            useModelInput: false
+            usePresencePenaltyInput: false
+            useStop: false
+            useStopInput: false
+            useTemperatureInput: false
+            useTopP: false
+            useTopPInput: false
+            useUseTopPInput: false
+            useUserInput: false
+          visualData: 770.8816733034378/550.7132542388322/230/706//
+        '[r7p4zBc5E6iW5ozCyQZiw]:prompt "Prompt"':
+          data:
+            enableFunctionCall: false
+            promptText: >-
+              TikTok 和字节跳动将如何挑战美国的“非售即禁”法案
+
+
+              杰里米·豪威尔（Jeremy Howell）
+
+              Role,BBC 国际部
+
+              2024 年 9 月 16 日
+
+              TikTok 的中国母公司字节跳动将于 9 月 16 日向美国法院提起诉讼，挑战此前通过的“非售即禁”法案。
+
+
+              字节跳动将辩称，对 TikTok 的禁令侵犯了美国宪法规定的言论自由权。
+
+
+              美国通过了禁令 但让 TikTok 消失还有待时日
+
+              “卧底”调查 TikTok 推送给年轻人的 AI 视频、假信息和毁谤式评论
+
+              美国众议院通过法案提出 TikTok 不出售就禁止 潜在买家有谁？
+
+              TikTok 美国面临下架 它是否对西方国家构成真正威胁？
+
+              美国众议院通过法案 TikTok 在美面临被迫出售或彻底被禁
+
+              美国如何用禁令威胁 TikTok？
+
+              美国总统拜登（Joe Biden）今年 4 月签署了《保护美国人免受外国对手控制应用法案》（Protecting Americans Against Foreign Adversary Controlled Applications Act），该法案在国会获得了压倒性的支持。
+
+
+              该法案禁止在美国运营来自俄罗斯、中国、伊朗和朝鲜等对手国家的应用程序。
+
+
+              当局利用新法案对 TikTok 的母公司下达命令，责令其将应用程序出售给非中国公司，否则将面临被禁。字节跳动必须在 2025 年 1 月 19 日之前完成这项工作。
+
+
+              位于中国北京的字节跳动总部。图像来源，Getty Images
+
+              图像加注文字，美国担心，字节跳动可能会将 TikTok 美国用户的详细资料传回北京总部和中国情报部门。字节跳动否认该说法。
+
+              美国当局尤其担心 TikTok。该公司 20%的股份由中国公司字节跳动的创始人持有。其余股份由投资公司和公司员工持有。
+
+
+              美国国会和白宫认为，TikTok 可以从 1.7 亿美国用户那里收集到大量数据，而字节跳动可能会将其转交给中国情报部门，以帮助监视美国。
+
+
+              TikTok 收集用户个人数据的方式与 Facebook、Instagram、Snapchat 和 YouTube 等其它社交媒体应用相同。不同的是，美国当局信任这些国内公司。
+
+
+              还有人担心，TikTok 向用户推荐观看内容的“为你”（For You）推送功能会被中国当局用作洗脑工具。
+
+
+              TikTok 禁令可能如何运作？
+
+              如果美国当局要禁用 TikTok，预计会禁止苹果（Apple）和谷歌（Google）等公司运营的应用程序商店在美国提供 TikTok 下载。
+
+
+              这也意味着 TikTok 的美国用户将无法再从应用商店获得该应用的更新。
+
+
+              美国的互联网托管服务也将被禁止支持 TikTok。
+
+
+              白宫表示，它希望终止中国持有的 TikTok 所有权，而不是屏蔽该应用本身。
+
+
+              谁在挑战禁令，争论点在何处？
+
+              TikTok 首席执行官周受资在美国国会作证。（资料图片）图像来源，Reuters
+
+              图像加注文字，TikTok 首席执行官周受资表示，禁止该应用程序将侵犯美国公民的言论自由。
+
+              9 月 16 日，哥伦比亚特区巡回上诉法院的一个法官小组将听取三个团体对新法律提起诉讼的口头辩论。
+
+
+              这三个团体分别是：字节跳动及其美国分公司 TikTok Inc、一群 TikTok 内容创作者、一个名为 BASED 的保守派政治组织，该组织为年轻人提供 TikTok 内容。
+
+
+              字节跳动和其它组织认为，成千上万的美国公民在 TikTok 上创建内容，禁止 TikTok 将侵犯他们根据宪法第一修正案享有的权利，该修正案致力于保障言论自由。
+
+
+              TikTok 首席执行官周受资告诉美国用户：“我们有信心，我们将继续在法庭上为你们的权利而战。事实和宪法都站在我们这边……请放心，我们不会离开。”
+
+
+              字节跳动称其不可能出售 TikTok，因为这需要中国政府的许可，而中国政府已经表示将拒绝批准。
+
+
+              字节跳动还表示，禁止 TikTok 将危及美国的就业机会。
+
+
+              根据该公司在 2024 年 3 月发布的数据，有 700 多万美国小企业和个人在 TikTok 上发布内容。该公司称，他们因此获得了 150 亿美元（120 亿英镑）的收入。
+
+
+              TikTok content creators gather outside the Capitol on 22 March 2023 图像来源，Getty Images
+
+              图像加注文字，TikTok 在美国有 1.7 亿用户，主要是年轻人。在法案审议期间，国会大楼外聚集了年轻的抗议者。
+
+              特朗普（Donald Trump）在 2020 年担任美国总统期间曾试图禁止该应用程序。
+
+
+              不过，他最近也开始在该应用开设账号，并反对禁令。他支持字节跳动的观点，认为禁令将使 Facebook 等竞争对手的社交媒体应用程序在市场中拥有过多权力。
+
+
+              字节跳动称，美国用户的数据没有存储在中国，并坚称这些数据不可能传回中国。该公司称，它一直在得克萨斯州建立数据中心，专门用于存储美国用户数据。
+
+
+              字节跳动和其他诉讼方以及美国司法部都要求上诉法院在 12 月 6 日前作出裁决。在那之后，此案可能会被提交给美国最高法院。
+
+
+              美国的 TikTok 禁令对世界其它地区意味着什么？
+
+              印度、尼泊尔、阿富汗和索马里已经禁止使用 TikTok。TikTok 的国际版本身在中国也被禁用。
+
+
+              欧盟委员会已经通知员工不要在工作设备上安装该应用，英国政府和议会也是如此。
+
+
+              如果美国禁用 TikTok，外界认为许多美国盟国也可能会效仿该做法，颁布禁令。
+
+
+              中国当局多年来也一直禁止美国社交媒体应用程序。
+            type: user
+            useTypeInput: false
+          outgoingConnections:
+            - output->"Chat" mkBkorFAah6PKeoYQDgNr/prompt
+          visualData: 253.3760367117902/622.6300161989654/280/705//
+  metadata:
+    description: ""
+    id: oSZc1pEbH1cy9P2uKXKX3
+    mainGraphId: svI1rXkJy_XF7qQlhS8cA
+    title: ReAct
+  plugins: []
